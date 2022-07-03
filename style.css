@@ -48,7 +48,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    width: 50%;
+    width: min(calc(100% - 600px), 50%);
     position: relative;
     display: flex;
     align-items: center;
@@ -65,7 +65,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2em;
+    overflow: hidden;
 }
 
 div {
