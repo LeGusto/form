@@ -1,0 +1,179 @@
+* {
+    margin:0;
+    padding:0;
+    font-size: calc(8px + 1vmin);
+}
+
+
+html, body {
+    color: white;
+    height: 100%;
+    margin:0;
+    padding:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1, .desc {
+    text-align: center;
+    width: 70%;
+    flex: 1 0 auto;
+}
+
+h1 {
+    margin-top: 10vh;
+    font-size: min(3rem,5ch);
+}
+
+.desc {
+    margin-top: 1rem;
+    font-size: min(1rem,2ch);
+}
+
+
+img {
+    margin:0;
+    padding:0;
+  }
+
+body {
+    display: flex;
+    background-color: rgb(162, 213, 255);
+    background-image: url(./Contour\ Line.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+.bg {
+    background-image: url(busin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caption {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 15%;
+    color: white;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+div {
+    position: relative;
+}
+
+form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(60px + 40vmin);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: clamp(60px, 50px, 35px);
+    
+   
+}
+
+.top {
+    width: 100%;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fields {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0;
+  
+
+}
+
+.row div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: max(50%, 200px);
+    padding: 20px;
+    
+}
+
+button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    color: white;
+  padding: 0.3rem;
+  margin: 0;
+  
+  
+  }
+
+
+
+  input {
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 20%;
+  }
+
+  l
+
+  input:focus {
+    outline-color: white;
+  }
+
+  .right {
+    width: max(50%, 600px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    
+  }
+
+  button {
+    border-radius: 10px;
+    border: 3px rgb(56, 149, 255);
+    background-color: rgb(56, 149, 255);
+    margin-top: clamp(20px,10px,1px);
+    font-size: 18px;
+    width: 80px;
+  }
+
+  footer {
+    display: inline;
+  }
+
+
+
+  
