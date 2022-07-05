@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'formal';
+  src: url('fonts/quicksand-variablefont_wght-webfont.woff2') format('woff2'),
+       url('fonts/quicksand-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     margin:0;
     padding:0;
@@ -10,7 +18,7 @@ html, body {
     height: 100%;
     margin:0;
     padding:0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'formal', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 h1, .desc {
@@ -135,6 +143,7 @@ button, input, select, textarea{
   margin: 0;
   
   
+  
   }
 
 
@@ -147,11 +156,7 @@ button, input, select, textarea{
     height: 20%;
   }
 
-  l
-
-  input:focus {
-    outline-color: white;
-  }
+  
 
   .right {
     width: max(50%, 600px);
@@ -180,9 +185,30 @@ button, input, select, textarea{
     display: inline;
   }
 
-  form {
-    
+  input {
+    outline: none;
   }
+
+
+  input:focus {
+    outline: 1px solid white;
+  }
+
+  input:valid {
+    outline: 1px solid green;
+  }
+
+  input:focus:not(:placeholder-shown):invalid {
+    outline: 1px solid red;
+  }
+
+  input:required {
+    border: none;
+  }
+
+
+
+  
 
 
 
